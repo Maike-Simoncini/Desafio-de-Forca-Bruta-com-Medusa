@@ -48,7 +48,7 @@ ping -c 3 192.168.56.102  # substitua pelo IP do Metasploitable
 Use o `nmap` para descobrir serviços abertos:
 
 ```bash
-nmap -sV -p 192.168.56.102  # substitua pelo IP do Metasploitable
+nmap -sV -p 21,22,80,139,445 192.168.56.102  # substitua pelo IP do Metasploitable
 ```
 
 Você deverá ver:
