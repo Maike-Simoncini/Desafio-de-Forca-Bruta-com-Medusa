@@ -14,7 +14,6 @@ Simular ataques de força bruta em serviços (FTP, DVWA, SMB) usando Kali Linux 
 - `enum4linux`
 - DVWA (Damn Vulnerable Web App)
 
-
 ## 🛠️ Passo 1: Configuração do Ambiente
 
 ### 1.1 Instale o VirtualBox
@@ -44,8 +43,7 @@ ping -c 3 192.168.56.102  # substitua pelo IP do Metasploitable
 
 ![teste](images/teste.png)
 
-
-## 🔍 Passo 2: Enumeração Inicial (Opcional, mas recomendado)
+## 🔍 Passo 2: Enumeração Inicial
 
 Use o `nmap` para descobrir serviços abertos:
 
@@ -61,7 +59,6 @@ Você deverá ver:
 ### 📷 Imagem de exemplo:
 
 ![portas](images/portas.png)
-
 
 ## 💥 Passo 3: Ataques com Medusa
 
@@ -108,7 +105,6 @@ ACCOUNT FOUND: [ftp] Host: 192.168.56.102 User: msfadmin Password: msfadmin [SUC
 ### 📷 Imagem de exemplo:
 
 ![ftp](images/ftp.png)
-
 
 ### 3.2 Ataque ao DVWA (formulário web)
 
