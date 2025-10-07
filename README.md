@@ -161,13 +161,6 @@ enum4linux -a 192.168.56.102 | tee enum4_output.txt
 less enum4_output.txt 
 ```
 
-Saída esperada:
-```
-| smb-enum-users: 
-|   METASPLOITABLE2\msfadmin (RID: 1001)
-|   METASPLOITABLE2\user (RID: 1002)
-```
-
 ### 📷 Imagem de exemplo:
 
 ![enum](images/enum.png)
